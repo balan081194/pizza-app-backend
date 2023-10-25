@@ -7,8 +7,8 @@ const userRoute = require('./routes/userRoutes');
 
 app.use(express.json());
 
-app.use('/api/pizzas', pizzasRoute);
-app.use('/api/users', userRoute);
+app.use('https://pizza-app-frontend-sooty.vercel.app/api/pizzas', pizzasRoute);
+app.use('https://pizza-app-frontend-sooty.vercel.app/api/users', userRoute);
 
 app.get('/', (req, res) => {
   res.send('Server Working');
